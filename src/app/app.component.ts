@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Tasks';
+  todo = '';
+
+  todos: any[] = [];
+
+  addTodo(){
+    if(this.todo != ""){
+      this.todos = [...this.todos, this.todo];  //Spread operator
+      this.todo = "";
+    }else{
+      alert("Introduce algun texto");
+    }
+
+  }
+
+  deleteTodo(todoToDelete) {
+    this.todos = this.todos.filter(todo => todo !=todoToDelete);
+  }
 }

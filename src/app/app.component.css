@@ -23,3 +23,21 @@
     margin: 8px;
     font-size: 14px;
 }
+
+.todo {
+    width: 300px;
+    height: 18px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.todo-title {
+    width: 300px;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 16px;
+}
